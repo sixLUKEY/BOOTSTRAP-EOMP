@@ -81,24 +81,25 @@ body {
   }
 
   .name {
-    background-color: #e0e0e06d;
+    background-color: #5ef0ceda;
     box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
     width: fit-content;
+    border-radius: 10px;
   }
 
   .name span{
-    color: #5ef0ceda;
+    color: #303030;
     font-size: 100px;
     opacity: 0;
     transition: opacity 1300ms;
-    text-shadow:  0 1px 0 hsl(174, 100%, 63%),
-	                 0 2px 0 hsl(174, 88%, 65%),
-	                 0 3px 0 hsl(174, 92%, 63%),
-	                 0 4px 0 hsl(174,80%,66%),
-	                 0 5px 0 hsl(174,80%,64%),
-	                 0 6px 0 hsl(174,80%,62%),
-	                 0 7px 0 hsl(174,80%,61%),
-	                 0 8px 0 hsl(174,80%,60%),
+    text-shadow:  0 1px 0 hsl(176, 13%,11%),
+	                 0 2px 0 hsl(174,15%,15%),
+	                 0 3px 0 hsl(174,15%,13%),
+	                 0 4px 0 hsl(174,15%,16%),
+	                 0 5px 0 hsl(174,15%,14%),
+	                 0 6px 0 hsl(174,15%,12%),
+	                 0 7px 0 hsl(174,15%,11%),
+	                 0 8px 0 hsl(174,15%,10%),
 	
 	                 0 0 5px rgba(0,0,0,.05),
 	                0 1px 3px rgba(0,0,0,.2),
@@ -129,7 +130,7 @@ body {
   
 .pointer{
   animation: bobble 2s infinite linear;
-  color: #5ef0ceda !important;
+  color: #f98408 !important;
   font-family: 'Instrument Serif', serif;
 }
 
@@ -147,9 +148,98 @@ body {
 
 .hidden{
   opacity: 0;
-  transition: 4s;
+  transition: 2s;
 }
 
 .show{
   opacity: 1;
+}
+
+/* @keyframes highlight {
+  from{
+    background-color: transparent;
+  }
+  to{
+    background-color: #2ADDE9;
+  }
+} */
+
+.highlighted{
+  background-image: linear-gradient(to right, rgba(255,255,255,0) 50%, #f98408 50%);
+  background-position: -0% 0;
+  background-size: 200% auto;
+  transition: background-position 0.5s ease-out;
+}
+
+.highlighted:hover{
+  /* animation: highlight 1s ; */
+  background-position: -99.99% 0;
+}
+
+.divider{
+  width: 50%;
+  height: 1px;
+  background-color: #f98408;
+}
+
+.scramble{
+  transition: 0.5s ease-in-out;
+}
+
+.scramble:hover{
+  cursor: none;
+  transform: rotateZ(-10deg);
+  background-color:#5ef0ceda ;
+  color: #303030 !important;
+  border-radius: 5px;
+  box-shadow: inset 2px 2px 5px 0 rgba(0, 0, 0, 0.2), inset -2px -2px 5px 0 rgba(255, 255, 255, 0.5);
+}
+
+.key{
+  color: #f98408;
+  animation: grow 2s infinite linear;
+  width: fit-content !important;
+}
+
+@keyframes grow{
+  0% {
+    transform: scale(0.9);
+  }
+  
+  50% {
+    transform: scale(1);
+  }
+  
+  100% {
+    transform: scale(0.9);
+  }
+}
+
+.info-box{
+  color: #5ef0ceda;
+  font-family: 'Instrument Serif', serif;
+  word-spacing: 2px;
+}
+
+.button{
+  color: #f98408;
+  transition: 0.2s;
+}
+
+.button:hover{
+  color: #303030;
+  border-radius: 5px;
+  background-color: #5ef0ceda;
+  cursor: pointer;
+  padding: 5px;
+  box-shadow:   
+                inset 3px 3px 5px 0 rgba(0, 0, 0, 0.2), 
+                inset -3px -3px 5px 0 rgba(255, 255, 255, 0.5);
+}
+
+/* 0px 0px 5px 0 rgba(255,255,255,.5),
+                0px 0px 5px 0 rgba(116, 125, 136, .5), */
+
+.myWork{
+  color: #ffffff;
 }
