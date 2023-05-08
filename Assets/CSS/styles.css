@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #303030 !important;
+    min-height: 200vh !important;
+    
+}
+
+.logo{
+    transition: 0.2s;
+}
+
+
+.logo:hover{
+    transform: rotateZ(-10deg);
+    scale: 120%;
+}
+
+
+.nav-link{
+    margin-left: 10px !important;
+    color: #5ef0ceda !important;
+    transition: 0.4s !important;
+}
+
+.nav-link:hover{
+    transform: rotateZ(-10deg);
+    /* scale: 105%; */
+    background-color:#5ef0ceda ;
+    color: #303030 !important;
+    border-radius: 5%;
+    box-shadow: inset 2px 2px 5px 0 rgba(0, 0, 0, 0.2), inset -2px -2px 5px 0 rgba(255, 255, 255, 0.5);
+}
+
+.h1{
+    color: #5ef0ceda !important;
+    font-family: 'Instrument Serif', serif;
+}
+
+.wrapper {
+  display: grid;
+  place-items: center;
+}
+
+.typing-demo {
+  width: 20ch;
+  animation: typing 2s steps(20), blink .5s step-end infinite alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px whitesmoke solid;
+  font-size: 2em;
+}
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+}
+    
+@keyframes blink {
+  50% {
+    border-color: transparent
+  }
+}
+
+
+  @keyframes glow {
+    from {
+      text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #2ADDE9, 0 0 20px #2ADDE9, 0 0 25px #2ADDE9, 0 0 30px #2ADDE9, 0 0 35px #2ADDE9;
+    }
+    to {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #2ADDE9, 0 0 40px #2ADDE9, 0 0 50px #2ADDE9, 0 0 60px #2ADDE9, 0 0 70px #2ADDE9;
+    }
+  }
+
+  .name {
+    background-color: #e0e0e06d;
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+    width: fit-content;
+  }
+
+  .name span{
+    color: #5ef0ceda;
+    font-size: 100px;
+    opacity: 0;
+    transition: opacity 1300ms;
+    text-shadow:  0 1px 0 hsl(174, 100%, 63%),
+	                 0 2px 0 hsl(174, 88%, 65%),
+	                 0 3px 0 hsl(174, 92%, 63%),
+	                 0 4px 0 hsl(174,80%,66%),
+	                 0 5px 0 hsl(174,80%,64%),
+	                 0 6px 0 hsl(174,80%,62%),
+	                 0 7px 0 hsl(174,80%,61%),
+	                 0 8px 0 hsl(174,80%,60%),
+	
+	                 0 0 5px rgba(0,0,0,.05),
+	                0 1px 3px rgba(0,0,0,.2),
+	                0 3px 5px rgba(0,0,0,.2),
+	               0 5px 10px rgba(0,0,0,.2),
+	              0 10px 10px rgba(0,0,0,.2),
+                0 20px 20px rgba(0,0,0,.3);
+}
+  
+
+  .name:hover span {
+    opacity: 1
+  }
+
+  .name span:nth-child(1)  { transition-delay:  200ms }
+  .name span:nth-child(2)  { transition-delay:  1000ms }
+  .name span:nth-child(3)  { transition-delay:  2000ms }
+  .name span:nth-child(4)  { transition-delay:  800ms }
+  .name span:nth-child(5)  { transition-delay:  1400ms }
+  .name span:nth-child(6)  { transition-delay:  500ms }
+  .name span:nth-child(7)  { transition-delay:  2200ms }
+  .name span:nth-child(8)  { transition-delay:  1800ms }
+  .name span:nth-child(9)  { transition-delay:  600ms }
+  .name span:nth-child(10) { transition-delay:  1600ms }
+  .name span:nth-child(11) { transition-delay:  400ms }
+  .name span:nth-child(12) { transition-delay:  1200ms }
+
+  
+.pointer{
+  animation: bobble 2s infinite linear;
+  color: #5ef0ceda !important;
+  font-family: 'Instrument Serif', serif;
+}
+
+@keyframes bobble {
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(10px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
+}
+
+.hidden{
+  opacity: 0;
+  transition: 4s;
+}
+
+.show{
+  opacity: 1;
+}
