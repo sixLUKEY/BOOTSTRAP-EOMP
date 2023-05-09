@@ -141,3 +141,207 @@ svg:hover #Gear2{
         transform: rotateZ(0deg);
     }
 }
+
+.col{
+    width: 23% !important;
+    margin: 0 5px;
+    box-shadow: inset 8px 8px 10px 0 rgba(67, 67, 67, 0.2), inset -8px -8px 15px 0 rgba(157, 156, 156, 0.253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+    transition: 0.5s;
+}
+
+.icons{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    width: 70px;
+    height: 80px;
+    background: #707070;
+    text-align: center;
+    padding: 10px;
+    transform: rotate(318deg) skew(199deg) translate(0, 0);
+    transition: 0.5s ease-in-out;
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
+  }
+
+
+  .icons::before{
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background: #444444;
+    transition: 0.5s;
+    transform: 0.5s;
+    transform: rotate(0deg) skewY(-45deg);
+  }
+
+  .icons::after{
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 20px;
+    width: 100%;
+    background: #444444;
+    transition: 0.5s;
+    transform: 0.5s;
+    transform: rotate(0deg) skewX(-45deg);
+  }
+
+  .col:hover .icons{
+    transform: skew(5deg) translate(20px, -50px);
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
+    animation: bobble 1s 0.5s infinite linear ;
+  }
+
+  .icons svg{
+    transition: 0.5s;
+  }
+
+  .col:hover .icons svg{
+    fill: white;
+  }
+
+  .col:hover #html{
+    background-color: #E44D26;
+  }
+  .col:hover #html::before{
+    background-color: #e44c26a6;
+  }
+  .col:hover #html::after{
+    background-color: #e05a38;
+  }
+
+  .col:hover #css{
+    background-color: #3595CF;
+  }
+  .col:hover #css::before{
+    background-color: #3594cfa4;
+  }
+  .col:hover #css::after{
+    background-color: #58a3d2;
+  }
+  
+
+  .col:hover #bootstrap{
+    background-color: #6E10EE;
+  }
+  .col:hover #bootstrap::before{
+    background-color: #6c10eeaa;
+  }
+  .col:hover #bootstrap::after{
+    background-color: #7521ea;
+  }
+  
+
+  .col:hover #tailwind{
+    background-color: #36B7F0;
+  }
+  .col:hover #tailwind::before{
+    background-color: #36b8f0b8;
+  }
+  .col:hover #tailwind::after{
+    background-color: #30b2ea;
+  }
+  
+
+  .col:hover #javascript{
+    background-color: #EFD81D;
+  }
+  .col:hover #javascript::before{
+    background-color: #efd61dc5;
+  }
+  .col:hover #javascript::after{
+    background-color: #e9d53f;
+  }
+  
+
+  .col:hover #react{
+    background-color: #00D1F7;
+  }
+  .col:hover #react::before{
+    background-color: #00d2f7c6;
+  }
+  .col:hover #react::after{
+    background-color: #14d5f7;
+  }
+  
+
+  .col:hover #java{
+    background-color: #E52024;
+  }
+  .col:hover #java::before{
+    background-color: #e52023cb;
+  }
+  .col:hover #java::after{
+    background-color: #e73538;
+  }
+  
+
+  .col:hover #cs{
+    background-color: #964D91;
+  }
+  .col:hover #cs::before{
+    background-color: #964d91c6;
+  }
+  .col:hover #cs::after{
+    background-color: #955591;
+  }
+  
+ .col1:hover{
+    background-color: #e44c2682;
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 #e6613f;
+ }
+  
+ .col2:hover{
+    background-color: #3594cf5d;
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 #4299cf;
+ }
+  
+ .col3:hover{
+    background-color: #6c10ee89;
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 #7a29ec;
+ }
+  
+ .col4:hover{
+    background-color: #36b8f07c;
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 #4bc2f5;
+ }
+  
+ .col5:hover{
+    background-color: #efd61d7b;
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 #f0db3a;
+ }
+  
+ .col6:hover{
+    background-color: #00d2f788;
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 #23d7f7;
+ }
+  
+ .col7:hover{
+    background-color: #e5202388;
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 #e33538;
+ }
+  
+ .col8:hover{
+    background-color: #964d9195;
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 #965892;
+ }
+
+ @keyframes bobble {
+    10%{
+        transform:skew(5deg) translate(20px, -50px);
+    }
+    50%{
+        transform:skew(5deg) translate(20px, -40px);
+    }
+    100%{
+        transform:skew(5deg) translate(20px, -50px);
+    }
+ }
