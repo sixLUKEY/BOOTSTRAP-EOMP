@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #303030 !important;    
+}
+
+.logo{
+    transition: 0.2s;
+}
+
+
+.logo:hover{
+    transform: rotateZ(-10deg);
+    scale: 120%;
+}
+
+
+.nav-link{
+    margin-left: 10px !important;
+    color: #5ef0ceda !important;
+    transition: 0.4s !important;
+}
+
+.nav-link:hover{
+    transform: rotateZ(-10deg);
+    /* scale: 105%; */
+    background-color:#5ef0ceda ;
+    color: #303030 !important;
+    border-radius: 5%;
+    box-shadow: inset 2px 2px 5px 0 rgba(0, 0, 0, 0.2), inset -2px -2px 5px 0 rgba(255, 255, 255, 0.5);
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    transition: 2s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 50px;
+}
+
+.dropdown-content a {
+    /* color: black; */
+    border-radius: 999px;
+    padding: 5px;
+    width: 40px;
+    margin-top: 5px;
+    text-decoration: none;
+    display: block;
+    }
+
+.dropdown-content a:hover {
+    border-radius: 999px;
+}
+
+.dropdown:hover .dropdown-content {display: block;
+    transform: rotateZ(10deg);}
+
+footer{
+    color: #5ef0ceda;
+}
+
+.h1{
+    color: #5ef0ceda !important;
+    font-family: 'Instrument Serif', serif;
+}
+
+.orange{
+    background-color: #f98408;
+    color: #f98408 ;
+}
+
+.divider{
+    width: 50%;
+    height: 1px;
+    background-color: #f98408;
+  }
+  
+
+svg{
+    cursor: pointer;
+}
+
+:root {
+    --dark-color: #f98408;
+    --light-color: #5ef0ceda;
+}
+  
+#Gear1 {
+    fill: var(--dark-color);
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#Gear2 {
+    fill: var(--light-color);
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+svg:hover #Gear1{
+    animation: spin 3s infinite linear;
+}
+
+
+svg:hover #Gear2{
+    animation: spinAlt 3s infinite linear;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    20%{
+        transform: rotateZ(360deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
+
+@keyframes spinAlt {
+    0%{
+        transform: rotateZ(0deg);
+    }
+    20%{
+        transform: rotateZ(-360deg);
+    }
+    100%{
+        transform: rotateZ(0deg);
+    }
+}
