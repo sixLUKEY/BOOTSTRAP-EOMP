@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #303030 !important;    
+}
+
+.logo{
+    transition: 0.2s;
+}
+
+
+.logo:hover{
+    transform: rotateZ(-10deg);
+    scale: 120%;
+}
+
+
+.nav-link{
+    margin-left: 10px !important;
+    color: #5ef0ceda !important;
+    transition: 0.4s !important;
+}
+
+.nav-link:hover{
+    transform: rotateZ(-10deg);
+    /* scale: 105%; */
+    background-color:#5ef0ceda ;
+    color: #303030 !important;
+    border-radius: 5%;
+    box-shadow: inset 2px 2px 5px 0 rgba(0, 0, 0, 0.2), inset -2px -2px 5px 0 rgba(255, 255, 255, 0.5);
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    transition: 2s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 50px;
+}
+
+.dropdown-content a {
+    /* color: black; */
+    border-radius: 999px;
+    padding: 5px;
+    width: 40px;
+    margin-top: 5px;
+    text-decoration: none;
+    display: block;
+    }
+
+.dropdown-content a:hover {
+    border-radius: 999px;
+}
+
+.dropdown:hover .dropdown-content {display: block;
+    transform: rotateZ(10deg);}
+
+footer{
+    color: #5ef0ceda;
+}
+
+.h1{
+    color: #5ef0ceda !important;
+    font-family: 'Instrument Serif', serif;
+}
+
+.orange{
+    background-color: #f98408;
+    color: #f98408 ;
+}
+
+.divider{
+    width: 50%;
+    height: 1px;
+    background-color: #f98408;
+  }
+  
+.btn{
+    background-color: #f98408 !important;
+}
+
+.btn:hover{
+    box-shadow: inset 2px 2px 5px 0 rgba(0, 0, 0, 0.2), inset -2px -2px 5px 0 rgba(255, 255, 255, 0.5);
+    background-color: #f98408e2 !important;
+}
+
+.form-floating>label::after{
+    background-color: transparent !important;
+}
+
+
+.form-control{
+    box-shadow: inset 6px 6px 10px 0 rgba(0, 0, 0, 0.2), inset -6px -6px 10px 0 rgba(255, 255, 255, 0.5);
+    background-color: #5ef0ceda !important;
+}
+
+.hover-text{
+    color: #303030 !important;
+}
+
+.asterisk{
+    color: #f98408;
+}
+
+.hover:hover{cursor: pointer}
+
+.hover {
+    background: transparent; outline: none;
+    position: relative;
+    color: #5ef0ceda;
+    /* border: 2px solid #111; */
+    /* padding: 15px 50px; */
+    overflow: hidden;
+}
+
+/*button:before (attr data-hover)*/
+.hover:hover:before{opacity: 1; transform: translate(0,0);}
+.hover:before{
+    color: #303030;
+    content: attr(data-hover);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+    opacity: 0;
+    transform: translate(-100%,0);
+    transition: all .3s ease-in-out;
+    background-color: #f98408;
+    border-radius: 5px;
+    box-shadow: inset 3px 3px 5px 0 rgba(0, 0, 0, 0.2), inset -3px -3px 5px 0 rgba(255, 255, 255, 0.5);
+}
+    /*button div (button text before hover)*/
+    .hover:hover div{opacity: 0; transform: translate(100%,0)}
+    .hover div{
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: all .3s ease-in-out;
+    }
