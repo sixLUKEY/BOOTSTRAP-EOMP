@@ -143,6 +143,8 @@ svg:hover #Gear2{
 }
 
 .col{
+    display: flex;
+    flex-direction: column;
     width: 23% !important;
     margin: 0 5px;
     box-shadow: inset 8px 8px 10px 0 rgba(67, 67, 67, 0.2), inset -8px -8px 15px 0 rgba(157, 156, 156, 0.253);
@@ -163,7 +165,7 @@ svg:hover #Gear2{
     text-align: center;
     padding: 10px;
     transform: rotate(318deg) skew(199deg) translate(0, 0);
-    transition: 0.5s ease-in-out;
+    transition: 0.5s;
     box-shadow: -20px 20px 10px rgba(0, 0, 0, 0.5);
   }
 
@@ -197,7 +199,12 @@ svg:hover #Gear2{
   .col:hover .icons{
     transform: skew(5deg) translate(20px, -50px);
     box-shadow: -50px 50px 50px rgba(0, 0, 0, 0.5);
-    animation: bobble 1s 0.5s infinite linear ;
+    animation: bobble 1s 0.4s infinite linear;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+  }
+
+  .col:hover .progress{
+    opacity: 1;
   }
 
   .icons svg{
@@ -208,6 +215,7 @@ svg:hover #Gear2{
     fill: white;
   }
 
+  
   .col:hover #html{
     background-color: #E44D26;
   }
@@ -217,6 +225,7 @@ svg:hover #Gear2{
   .col:hover #html::after{
     background-color: #e05a38;
   }
+  
 
   .col:hover #css{
     background-color: #3595CF;
@@ -339,9 +348,29 @@ svg:hover #Gear2{
         transform:skew(5deg) translate(20px, -50px);
     }
     50%{
-        transform:skew(5deg) translate(20px, -40px);
+        transform:skew(5deg) translate(20px, -30px);
     }
     100%{
         transform:skew(5deg) translate(20px, -50px);
     }
  }
+
+ .progress #html,.progress #css,.progress #bootstrap,.progress #tailwind,.progress #javascript,.progress #react,.progress #java,.progress #cs{
+  background-color: #30303064;
+ }
+
+ .progress #javascript, .progress #react{
+  color: #303030;
+ }
+
+ .progress{
+  box-shadow: -10px 10px 10px rgba(0, 0, 0, 0.5);
+  font-weight: 700;
+  transform:  skew(210deg) translate(0, 0);
+  opacity: 0.04;
+  transition: all 0.5s;
+  background-color: #30303080 !important;
+  height: 25px !important;
+ }
+ 
+ 
