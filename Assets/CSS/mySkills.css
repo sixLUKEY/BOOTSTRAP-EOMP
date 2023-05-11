@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
 
+::-webkit-scrollbar{
+  display: none;
+}
+
 *{
     border: 0;
     margin: 0;
@@ -390,13 +394,11 @@ svg:hover #Gear2{
   1px 3px 1px #5ef0ceda,
   1px 4px 1px #5ef0ceda,
   1px 5px 1px #5ef0ceda,
-  /* 1px 6px 1px #66f0d0da, */
   
 1px 18px 6px rgba(16,16,16,0.4),
 1px 22px 10px rgba(16,16,16,0.2),
 1px 25px 35px rgba(16,16,16,0.2),
 1px 30px 60px rgba(16,16,16,0.4);
-  /* letter-spacing: 0.4rem; */
 }
 
 .asterisk{

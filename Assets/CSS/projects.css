@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+*{
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #303030 !important;    
+}
+
+.logo{
+    transition: 0.2s;
+}
+
+
+.logo:hover{
+    transform: rotateZ(-10deg);
+    scale: 120%;
+}
+
+
+.nav-link{
+    margin-left: 10px !important;
+    color: #5ef0ceda !important;
+    transition: 0.4s !important;
+}
+
+.nav-link:hover{
+    transform: rotateZ(-10deg);
+    background-color:#5ef0ceda ;
+    color: #303030 !important;
+    border-radius: 5%;
+    box-shadow: inset 2px 2px 5px 0 rgba(0, 0, 0, 0.2), inset -2px -2px 5px 0 rgba(255, 255, 255, 0.5);
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    transition: 2s;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: 50px;
+}
+
+.dropdown-content a {
+    border-radius: 999px;
+    padding: 5px;
+    width: 40px;
+    margin-top: 5px;
+    text-decoration: none;
+    display: block;
+    }
+
+.dropdown-content a:hover {
+    border-radius: 999px;
+}
+
+.dropdown:hover .dropdown-content {display: block;
+    transform: rotateZ(10deg);}
+
+footer{
+    color: #5ef0ceda;
+}
+
+.h1{
+    color: #5ef0ceda !important;
+    font-family: 'Instrument Serif', serif;
+}
+
+.orange{
+    background-color: #f98408;
+    color: #f98408 ;
+}
+
+.divider{
+    width: 50%;
+    height: 1px;
+    background-color: #f98408;
+  }
+
+  .img-thumbnail{
+    border: none !important;
+    padding: 20px !important;
+    background-color: black !important;
+  }
+  
+
+  .project {
+    position: relative;
+    text-align: center;
+    color: white;
+    transition: 0.2s;
+  }
+
+  .project img{
+    transition: 0.2s;
+  }
+
+  .project:hover img{
+    opacity: 0.4;
+    scale: 1.1;
+  }
+  
+  .project:hover .centered{
+    display: block;
+  }
+
+  .centered {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.2s;
+  }
+
+  .centered a{
+    margin: 0 10px;
+    text-decoration: none;
+    font-size: 50px;
+    color: #5ef0ceda;
+  }
+
+  .centered a:hover{
+    opacity: 0.8;
+  }
+
+  .project-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5ef0ceda ;
+  font-family: 'Instrument Serif', serif;
+  font-size: 20px;
+  border-radius: 10px;
+  background: #303030;
+  box-shadow: inset 12px 12px 23px #292929,
+            inset -12px -12px 23px #373737;
+  
+  }
