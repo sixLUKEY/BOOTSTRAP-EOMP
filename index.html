@@ -18,9 +18,9 @@
   <body>
     <main>
       <!-- NAVIGATION SECTION -->
-      <section class="navigation mt-3 sticky-top">
+      <section class="navigation mt-3 sticky-md-top sticky-sm-top col-sm10">
         <div class="navbar col-md-12 col-sm-12">
-          <div class="logo px-3">
+          <div class="logo px-md-3 px-sm-2 px-0">
             <div class="dropdown">
               <button class="dropbtn bg-transparent">
                 <svg
@@ -192,16 +192,16 @@
                   ></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#about">about.ME</a>
+                  <a class="nav-link" href="#about"><i class="fa-solid fa-circle-info d-none"></i>about.ME</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/Assets/Projects/projects.html">myWork</a>
+                  <a class="nav-link" href="/Assets/Projects/projects.html"><i class="fa-solid fa-briefcase none"></i>myWork</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/Assets/mySkills/mySkills.html">mySkills</a>
+                  <a class="nav-link" href="/Assets/mySkills/mySkills.html"><i class="fa-solid fa-kitchen-set none"></i>mySkills</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="/Assets/Contact Page/contact.html">contact.ME</a>
+                  <a class="nav-link" href="/Assets/Contact Page/contact.html"><i class="fa-solid fa-address-book none"></i>contact.ME</a>
                 </li>
               </ul>
             </div>
@@ -215,15 +215,15 @@
           <div class="banner col-md-12 text-center wrapper">
             <div class="h1 fst-italic typing-demo">Hello World, my name is</div>
             <div class="container name mt-4">
-              <div class="col-sm-12 col-md-12">
-                <span id="L">L</span>
+              <div class="col-sm-12 col-md-12 firstName">
+              <span id="L">L</span>
               <span id="U">U</span>
               <span id="K">K</span>
               <span id="E">E</span>
               &nbsp; &nbsp; &nbsp;
               </div>
               
-              <div class="col-sm-12 col-md-12">
+              <div class="col-sm-12 col-md-12 Lastname">
               <span id="E2">E</span>
               <span id="V">V</span>
               <span id="E3">E</span>
@@ -261,36 +261,39 @@
         class="about d-flex justify-content-center flex-column"
         id="about"
       >
-        <div class="key mx-5 fs-5"> <span class="h1">Key</span><br>* = hover</div>
+      <div class="key h1 fs-5 mx-auto p-3 fs-1">Key <br>* = Hover</div>
+        
         <div class="heading col-md-12 d-flex justify-content-center h1 my-5">
           <h1 class="scramble text-center px-3" data-value="About Me">
-            About Me<span class="key">*</span>
+            About Me<span class="asterisk">*</span>
           </h1>
         </div>
         <div
-          class="info-box col-md-10 col-sm-12 d-sm-flex d-flex flex-row justify-content-center my-5 gap-5 fs-4">
-          <div class="info col-md-5 col-sm-12">
+          class="info-box col-md-10 col-sm-12 d-sm-flex flex-sm-column d-flex flex-md-row justify-content-center my-5 gap-5 fs-4">
+          <div class="info col-md-5 col-sm-10 mx-sm-auto mx-md-0 mx-auto">
             Hi! My name is Luke Evertson and I am an up-and-coming web
             developer. I love making things look nice. Who needs function when
             things look good?!
             <br />
+            <br class="d-md-none">
             I love technology. It's a love-hate relationship that dates back to
             my toddler days. I've always been fascinated by gadgets, screens,
             appliances and <span class="button">Buttons</span>.
             <br />
+            <br class="d-md-none">
             Today I'm furthering this fascination by designing websites, which
             are all around us!
-            <br />
             When it comes to web design, and designing in general, I believe
             more is less, that's why i love minimalistic/simplistic designs.
             <br />
+            <br class="d-md-none">
             Check out some of my work
             <a href="/Assets/Projects/projects.html" class="myWork text-decoration-none highlighted"
               >here
               <i class="fa-solid fa-arrow-up-right-from-square fa-2xs"></i>.</a
             >
           </div>
-          <div class="picture col-md-3">
+          <div class="picture col-md-3 mx-sm-auto mx-md-0 my-md-o my-sm-0 my-5">
             <div class="flip-card">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
@@ -343,7 +346,7 @@
                         >
                       </div>
                     </div>
-                    <div class="col-8">
+                    <div class="col-md-8 col-12">
                       <div
                         class="tab-content mt-3 text-center"
                         id="nav-tabContent"
@@ -390,9 +393,14 @@
                   </div>
                 </div>
               </div>
+              <div
+              class="container d-flex flex-start mt-2 pointer fst-italic fs-4 d-md-none d-sm-none hover2"
+            >
+              CLICK ME! &nbsp; <i class="fa-solid fa-arrow-up"></i>
+            </div>
             </div>
           </div>
-          <span class="asterisk">*</span>
+          <span class="asterisk mx-sm-auto mt-sm-5 mx-md-0 mt-md-0 d-sm-block d-md-block d-none">*</span>
         </div>
       </section>
 

@@ -124,12 +124,9 @@ footer{
     background: transparent; outline: none;
     position: relative;
     color: #5ef0ceda;
-    /* border: 2px solid #111; */
-    /* padding: 15px 50px; */
     overflow: hidden;
 }
 
-/*button:before (attr data-hover)*/
 .hover:hover:before{opacity: 1; transform: translate(0,0);}
 .hover:before{
     color: #303030;
@@ -146,10 +143,27 @@ footer{
     border-radius: 5px;
     box-shadow: inset 3px 3px 5px 0 rgba(0, 0, 0, 0.2), inset -3px -3px 5px 0 rgba(255, 255, 255, 0.5);
 }
-    /*button div (button text before hover)*/
-    .hover:hover div{opacity: 0; transform: translate(100%,0)}
-    .hover div{
+    .hover:hover a{opacity: 0; transform: translate(100%,0)}
+    .hover a{
+    text-decoration: none;
     text-transform: uppercase;
-    font-weight: 700;
+    color: #5ef0ceda;
+    transform: translate(-100%,0);
     transition: all .3s ease-in-out;
+    }
+
+
+    @media only screen and (max-width:300px) {
+        .navbar{
+            position: relative !important;
+            display: flex;
+            flex-direction: row;
+            width: 95% ;
+        }
+        form{
+            width: 95%;
+        }
+        .lastName{
+            margin-bottom: 15px !important;
+        }
     }

@@ -17,13 +17,12 @@
   </head>
   <body>
     <main class="d-flex flex-column justify-content-center">
-      <section class="navigation mt-3 sticky-top">
+      <section class="navigation mt-3 sticky-md-top sticky-sm-top">
         <div class="navbar col-md-12">
           <div class="logo px-3">
             <div class="dropdown">
               <button class="dropbtn bg-transparent">
-                <a href=""
-                  ><svg
+                  <svg
                     width="60"
                     height="60"
                     viewBox="0 0 1106 1035"
@@ -161,8 +160,7 @@
                     <path
                       d="M525.328 714.993C496.743 675.354 517.047 621.66 562.247 609.47C602.01 598.745 642.087 626.407 646.749 667.479C650.587 701.289 627.591 735.851 590.063 741.492C563.856 745.431 542.09 736.23 525.328 714.993Z"
                       fill="#010101"
-                    /></svg
-                ></a>
+                    /></svg>
               </button>
               <div class="dropdown-content text-center">
                 <a href="https://www.facebook.com/luke.evertson" class="nav-link" target="_blank"
@@ -184,7 +182,7 @@
             </div>
           </div>
           <nav class="navbar">
-            <div class="container-fluid">
+            <div class="container-md container-sm">
               <ul class="nav mx-5 justify-content-end">
                 <li class="nav-item">
                   <a class="nav-link active" aria-current="page" href="/index.html"
@@ -212,10 +210,10 @@
             class="h1 text-center pb-5 d-flex align-items-center flex-column"
           >
             <p>
-              Lets's Get in
-              <button class="hover" data-hover="TOUCH!">
-                <div>CONTACT<span class="asterisk">*</span></div>
-              </button>
+              Lets's Get in 
+              <div class="hover text-decoration-none" data-hover="TOUCH!">
+                <a href="mailto:marcoslukerojo@gmail.com">CONTACT<span class="asterisk">*</span></a>
+              </div>
             </p>
             <div class="text-s w-25 align-self-center">
               <hr class="orange" />
@@ -231,7 +229,7 @@
               />
               <label for="floatingName" class="hover-text">First Name</label>
             </div>
-            <div class="col-md-6 form-floating mb-sm-4">
+            <div class="col-md-6 form-floating mb-sm-4 lastName">
               <input
                 type="text"
                 class="form-control"

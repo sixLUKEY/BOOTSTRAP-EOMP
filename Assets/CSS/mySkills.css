@@ -412,7 +412,7 @@ svg:hover #Gear2{
   background: #303030;
   box-shadow:  5px 5px 15px #252525,
              -5px -5px 15px #3b3b3b;
-             border: none;
+             border-color: rgba(255, 255, 255, 0.336);
              transition: 0.2s;
 }
 
@@ -426,9 +426,11 @@ svg:hover #Gear2{
 
 
 .btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
-  background: #f98408;
-box-shadow: inset 5px 5px 10px #d97307,
-            inset -5px -5px 10px #ff9509;
+  background: #303030;
+box-shadow: inset 9px 9px 18px #1e1e1e,
+            inset -9px -9px 18px #424242;
+            
+border-color: #34f90890 !important;
 
 
 }
@@ -445,7 +447,8 @@ box-shadow: inset 5px 5px 10px #d97307,
   background: #303030;
   box-shadow: inset 12px 12px 23px #292929,
             inset -12px -12px 23px #373737;
-  /* width: 100% !important; */
+  
+  width: 500px !important;
   transition: 0.2s;
   text-align: center;
   margin: 0px 100px !important;
@@ -470,4 +473,46 @@ box-shadow: inset 5px 5px 10px #d97307,
 .downArrow{
   cursor: default;
   animation: bobble2 1s infinite linear;
+}
+
+@media only screen and (max-width:700px){
+  .dropdown-menu.show{
+    width: 400px !important;
+  }
+  .col{
+    width: 48% !important;
+  }
+  body{
+    max-width: 700px !important;
+  }
+}
+
+@media only screen and (max-width:300px){
+  .col{
+    width: 45% !important;
+  }
+  .dropdown-menu.show{
+    width: 80px !important;
+    font-size: 20px !important;
+  }
+  .btn-secondary{
+    margin-left: 10px !important;
+  }
+}
+
+.bgs:hover .dropdown-menu {
+  display: block !important;
+  color: #5ef0ceda ;
+  font-family: 'Instrument Serif', serif;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  background: #303030;
+  box-shadow: inset 12px 12px 23px #292929,
+            inset -12px -12px 23px #373737;
+  
+  width: 500px !important;
+  transition: 0.2s;
+  text-align: center;
+  margin: 0px 100px !important;
 }

@@ -199,9 +199,9 @@ body {
 }
 
 .key{
-  color: #f98408;
-  animation: grow 2s infinite linear;
-  width: fit-content !important;
+  background-color: black;
+  color: #f98408 !important;
+  border-radius: 5px;
 }
 
 @keyframes grow{
@@ -325,7 +325,6 @@ footer{
   transition: 2s;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
   position: absolute;
@@ -333,7 +332,6 @@ footer{
   width: 50px;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
   /* color: black; */
   border-radius: 999px;
@@ -344,13 +342,67 @@ footer{
   display: block;
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   border-radius: 999px;
 }
 
-/* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;
   transform: rotateZ(10deg);}
 
 
+  @media only screen and (max-width:300px) {
+    
+    .name{
+      width: 80% !important;
+    }
+    .picture {
+      order: 1;
+      
+    }
+    
+    .flip-card{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .flip-card-inner{
+      display: flex;
+      justify-content: center;
+      width: 80% !important;
+    }
+
+    .flip-card-front{
+      width: 80% !important;
+    }
+    .flip-card-back{
+      width: 80% !important;
+    }
+    .info{
+      order: 2;
+      width: 80%;
+    }
+    .info-box{
+      flex-direction: column;
+      margin-top: 0px !important;
+    }
+    .asterisk{
+      text-align: center;
+    }
+
+    .name span{
+      font-size: 35px;
+    }
+
+    .hover2{
+      transform: translateY(50px) !important;
+    }
+
+    .none {
+      display: block !important;
+    }
+  }
+
+  .none{
+    opacity: 0;
+  }
