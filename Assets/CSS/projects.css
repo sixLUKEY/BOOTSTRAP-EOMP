@@ -149,3 +149,21 @@ footer{
             inset -12px -12px 23px #373737;
   
   }
+
+  @media only screen and (max-width:300px) {
+    .navbar{
+        position: relative !important;
+        display: flex;
+        flex-direction: row;
+        width: 95% ;
+    }
+}
+
+@media only screen and (max-width:450px) {
+  .navbar{
+      position: relative !important;
+      display: flex;
+      flex-direction: row;
+      width: 95% ;
+  }
+}

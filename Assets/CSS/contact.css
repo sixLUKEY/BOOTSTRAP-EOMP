@@ -167,3 +167,19 @@ footer{
             margin-bottom: 15px !important;
         }
     }
+
+    @media only screen and (max-width:450px) {
+        .navbar{
+            position: relative !important;
+            display: flex;
+            flex-direction: row;
+            width: 95% ;
+        }
+        form{
+            width: 95%;
+        }
+        .lastName{
+            margin-bottom: 15px !important;
+        }
+    }
+    

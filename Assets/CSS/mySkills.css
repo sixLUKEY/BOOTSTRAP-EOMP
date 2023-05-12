@@ -498,6 +498,31 @@ border-color: #34f90890 !important;
   .btn-secondary{
     margin-left: 10px !important;
   }
+  .navbar{
+    position: relative !important;
+    display: flex;
+    flex-direction: row;
+    width: 95% ;
+  }
+}
+
+@media only screen and (max-width:450px){
+  .col{
+    width: 45% !important;
+  }
+  .dropdown-menu.show{
+    width: 80px !important;
+    font-size: 20px !important;
+  }
+  .btn-secondary{
+    margin-left: 10px !important;
+  }
+  .navbar{
+    position: relative !important;
+    display: flex;
+    flex-direction: row;
+    width: 95% ;
+  }
 }
 
 .bgs:hover .dropdown-menu {

@@ -350,6 +350,68 @@ footer{
   transform: rotateZ(10deg);}
 
 
+  @media only screen and (max-width:450px) {
+    
+    .name{
+      width: 80% !important;
+    }
+    .picture {
+      order: 1;
+      /* margin: 0px 0px !important; */
+    }
+    
+    .flip-card{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .flip-card-inner{
+      display: flex;
+      justify-content: center;
+      width: 80% !important;
+    }
+
+    .flip-card-front{
+      width: 80% !important;
+    }
+    .flip-card-back{
+      width: 80% !important;
+    }
+    .info{
+      order: 3;
+      width: 80%;
+    }
+    .info-box{
+      flex-direction: column;
+      margin-top: 0px !important;
+    }
+    .asterisk{
+      text-align: center;
+    }
+
+    .name span{
+      font-size: 35px;
+    }
+
+    .hover2{
+      font-size: 50px;
+      order: 2;
+      transform: translateY(-150px) !important;
+    }
+
+    .none {
+      display: block !important;
+    }
+
+    .navbar{
+      position: relative !important;
+      display: flex;
+      flex-direction: row;
+      width: 95% ;
+    }
+  }
+
   @media only screen and (max-width:300px) {
     
     .name{
@@ -379,7 +441,7 @@ footer{
       width: 80% !important;
     }
     .info{
-      order: 2;
+      order: 3;
       width: 80%;
     }
     .info-box{
@@ -395,16 +457,20 @@ footer{
     }
 
     .hover2{
-      transform: translateY(50px) !important;
+      /* transform: translateY(80px) !important; */
+      order: 2;
+
     }
 
     .none {
       display: block !important;
     }
 
-    .logo {
-      height: 20px !important;
-      width: 20px !important;
+    .navbar{
+      position: relative !important;
+      display: flex;
+      flex-direction: row;
+      width: 95% ;
     }
   }
 
