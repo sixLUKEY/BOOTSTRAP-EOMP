@@ -401,6 +401,11 @@ footer{
     .none {
       display: block !important;
     }
+
+    .logo {
+      height: 20px !important;
+      width: 20px !important;
+    }
   }
 
   .none{

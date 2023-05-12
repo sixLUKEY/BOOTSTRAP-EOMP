@@ -205,7 +205,10 @@
       </section>
 
       <section class="w-100 d-flex justify-content-center">
-        <form class="col-md-6 my-5">
+        <form 
+        action="https://formspree.io/f/moqzbdvz"
+        method="POST"
+        class="col-md-6 my-5">
           <div
             class="h1 text-center pb-5 d-flex align-items-center flex-column"
           >
@@ -223,6 +226,7 @@
             <div class="col-md-6 form-floating mb-sm-3">
               <input
                 type="text"
+                name="First Name"
                 class="form-control"
                 id="floatingName"
                 placeholder="First name"
@@ -232,6 +236,7 @@
             <div class="col-md-6 form-floating mb-sm-4 lastName">
               <input
                 type="text"
+                name="Last Name"
                 class="form-control"
                 id="floatingSurname"
                 placeholder="Last name"
@@ -242,6 +247,7 @@
           <div class="form-floating mb-4">
             <input
               type="email"
+              name="Email"
               class="form-control"
               id="floatingInput"
               placeholder="name@example.com"
@@ -258,6 +264,7 @@
               >Leave a Message!</label
             >
             <textarea
+              name="message"
               class="form-control"
               id="exampleFormControlTextarea1"
               rows="3"
